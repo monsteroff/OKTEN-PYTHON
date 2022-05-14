@@ -1,0 +1,81 @@
+# # python -m venv venv    (python m(module yarat) venv(modulun adi) venv(papkanin adini qoy))
+# # venv -> sistemimizden kopyalanmish pythondur (amma ki temiz shekilde - hecnesiz)
+# # neyin yazili oldugunu yoxlamaq ucun ->  pip freeze
+
+# # indi ise venv-e qoshulmaq lazimdir (konsol ile ashagidaki kimi yazacayig) amma telesme yazmagi
+# # source venv/bin/activate
+
+# # Pycharmla elemek daha yaxshi ve duzgundur (daha problemsiz ishleyecek)
+# # Ashagida sagda Pyton 3.10 ustune bas -> Add interpreter -> intrepreter(adetez ozu duzgun gosterir) -> ok
+
+# # Python 3.10 yaninda proektimizin adi qeyd olunacaq moterizede o demekdir ki her shey duzgun ishleyir.
+# # Terminali achdiqda ise evvelde (venv) ... yazisini goreceyik.
+# # indi ise pip freeze qeyd elesek pythonun bosh oldugunu goreceyik. Ela
+# # venv -> virtual environment (virtual mekan)
+# # bunu elemeyimizn menasi odur ki sonra kitabxanalar arasinda konflikt falan yaranmasin (django, flusk ve s.)
+# # misal ucun python versiyalari arasinda konflikt falan yaranmasin.
+
+# # Djangonu yukleyek  pip install django
+# # yoxlayaq  pip freeze
+
+# # yeni emr yarandi django-admin (terminaldaki emrdir)
+# # django-admin startproject config .
+# # ^emr     proekt bashlat^  ^config qoy adini    noqte ise(oldugumuz papkanin icinde)
+# # noqte yox config yazsaq config icerisinde config yaranacaq (ele istemirik sadece)
+
+# # manage.py  django proektine girish noqtesi. gelecekde deyishiklik edeceyik. heleki bosh ver.
+# # config icerisinde __init__.py (config papkasinin adi papka deyil package olmasini bildirir)
+# # asgi.py  (asinxronluq ucundur (hemcinin djangnun asinxronluqu ucundur))
+# # settings.py baxacagiq hele.
+# # urls.py bu faylda linkler yaradacagiq hansi ile ki kliente cavab vereceyik yaxud hansisa bir emeliyyat yerine yet.
+
+# # bes kodun ozunu harada yazaq?
+# # kod yazmamishdan qabaq qeyd edek ki biz artiq django kitabxanasini yukledik ve gelecekde yene nese yukleyeceyik.
+# # ve yukleyende ele yuklemek lazimdir ki gelecekde bizden sonra diger proqramci acanda kodu bilsin ki ne yuklemeli olacaq.
+# # JS-de package.json kimi
+# # pip freeze-ye qayidaq
+# # pip freeze > requirements.txt    (requirements.txt) bele yazilmasi shertdir
+# # her defe nese teze yukleyende yuxaridaki emri yeniden vermeliyik.
+# # requirements.txt yaradilandan sonra meslehetdir ki pluginleri yukleyek(rahatliq ucun)
+# # indexlemeni gozleyek
+# # .gitignore lazimdir (el ile yaradaq) (proekt daxilinde) ve daxiline venv-i qoyaq. onu githuba yuklemeyeceyik.
+# # proekti nastroyka eledik.
+
+
+# # PYCHARM TAM VERSIYADA
+# # PYCHARM > SETTING > LANGUAGES & FRAMEWORKS > DJANGO > ENABLE DJANGO SUPPORT v
+# # dja proj root > bizim proekt
+# # sel dja sett > setting.py sechmek (bizim halda config daxilindedir)
+
+# # kechek settings.py-a
+# # DATABASES bolmesinde default sqlite3 qurashdirilib biz mysql istifade edeceyik.
+# # Ona gore deyishirik. Elavelerimizi edek(Mysql ile elaqedar) (host, port, user, pass)
+# # Django ile mysql arasinda olan konnektorumuzu yukleyek.
+# # pip install mysqlclient    (sonra da pip freeze > requirements.txt)
+
+# # proektimizi qoshaq yoxlayaq isheyir yoxsa yox
+# # python manage.py runserver (windows ucun beledi)
+
+# # ishledi .  ctrl + c  saxlayaq.
+# # yeni app yaradaq.  python manage.py startapp first (sondaki first sadece addir)
+# # bunu eleyenden sonra settings.py-da onu installed appsa daxil elemeliyik
+
+# # biz django ile full stack olaraq front ve back yaza bilerik
+# # amma nece ki angular ve react kimi suretli single page daha suretlileri ve gozelleri var
+# # django ile biz ancaq api yaradacayiq
+# # bunun ucun isterdik ki djangorestframework yukleyek
+# # setting py a first kimi elave edek eyni zamanda freeze...
+
+# # kecek first papkasina (admin lazim deyil, test lazim deyil)
+# # apps.py, models.py ve views.py qaldi
+# # views-e girdik her sheyi sildik (ora bax)
+# # class yaratdiq metod yaratdiq
+# # indi ise kechek urls.py-a ve onu hansisa urla berkidek.
+# # yazdiq
+# # settings.py en sonda APPEND_SLASH = False  slashlarin urllerde sonda yox evvelde qoyulmasi ucun lazimdir
+# # APPEND_SLASH = True olanda mecburam ki axirda slash qoyum
+# # cox dilde evvelde qoyulur , burda da ele olsun deye bunu eledik.
+# # MENDE ISHLEMEDI ONA GORE APPEND SLASH SOHBETINI YIGISHDIRDIM
+
+# # butun ish first/views.py ve config/urls.py da goruldu
+
