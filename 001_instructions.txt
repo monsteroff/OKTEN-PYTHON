@@ -79,3 +79,26 @@
 
 # # butun ish first/views.py ve config/urls.py da goruldu
 
+################################################################################
+# # DERS2
+################################################################################
+
+# # apps papkasi yaratdiq
+# # appsin daxiline kechirdik butun applerimizi
+# # settings.py da yerlerini belli eledik
+# # cars.models - de deyishiklikler (Table yaradilmasi)
+# # python manage.py makemigrations
+# # miqrations papkasinda yeni fayl emele geldi
+# # python manage.py migrate
+# # databaseye miqrasiyani yukledik
+# # tablenin adini deyishdik cunki lezet elemir :D
+# # Meta-da Tablenin adini qeyd ede bilerik
+# # Yeni miqrasiya yaratdiq ve onu da yukledik DB-ye
+# # python manage.py migrate cars 0001
+# # lazim olsa yuxaridaki emrle qayida bilerik bayaqki veziyyete
+# # python manage.py migrate cars 0002
+# # hemcinin 0002 veziyyetine
+
+# # views.py
+
+
